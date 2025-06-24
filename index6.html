@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>bus pass</title>
+</head>
+<body>
+    <center>
+        <img src="./images/tgsrtc.png" width="80">
+        <h1>TELANGANA ROAD TRANSPOART CORPORATION</h1>
+        <h2>GENERAL BUS PASS APPLICATION</h2>
+        <form>
+            <fieldset style="width: 500px;"> 
+                <legend>Applicant Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="name" >Name:</label></td>
+                        <td><input type="text" id="name" required name="name" maxlength="20" minlength="5" placeholder="enter your name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="father">Father/Guardians Name :</label></td>
+                        <td><input type="text" id="father" name="father" required maxlength="20" minlength="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="DOB">DOB:</label></td>
+                        <td><input type="date" id="DOB" name="DOB" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td><input type="radio" id="male" name="gender" required value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" required value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="others" name="gender" required value="others">
+                            <label for="others">Others</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Aadhaar No:</label></td>
+                        <td><input type="text" id="aadhaar" name="aadhaar" required maxlength="12"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="whats app">Whats App No:</label></td>
+                        <td><input type="text" id="whats app" required name="whats app" maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Email ID:</label></td>
+                        <td><input type="email" id="email" required name="email" placeholder="Enter Email ID"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Photo:</label></td>
+                        <td><input type="file" id="photo" required name="photo"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="width: 500px;">
+                <legend>Residential Address Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="applicants">Applicants Details:</label></td>
+                        <td><textarea name="applicants" id="applicants" required maxlength="200"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">District</label></td>
+                        <td><select name="district" id="district" required>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Kurnool">Kurnool</option>
+                            <option value="Ananthapur">Ananthapur</option>
+                            <option value="godavari">godavari</option>
+                            <option value="chithoor">chithoor</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mandal">Mandal</label></td>
+                        <td><select name="mandal" id="mandal" required>
+                            <option value="Amaravathi">Amaravathi</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="village">Village</label></td>
+                        <td><select name="village" id="village" required>
+                            <option value="Amaravathi">Amaravathi</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <td><label for="pincode">Pincode:</label></td>
+                        <td><input type="text" id="pincode" name="pincode" required maxlength="10"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="width: 500px;">
+                <legend>Pass Type Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="city">City:</label></td>
+                        <td><select name="city" id="city" required>
+                            <option value="Amaravathi">Amaravathi</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass type">Pass TYPE:</label></td>
+                        <td><select name="pass type" id="pass type" required>
+                            <option value="">--SELECT--</option>
+                            <option value="">GREATER PASS</option>
+                            <option value="">GENERAL ORDINARY ROUTE PASS</option>
+                            <option value="">ORDINARY PASS</option>
+                            <option value="">METRO EXPRESS PASS</option>
+                            </select></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset style="width: 500px;">
+                <legend>Mode Of Payment & Pass Collection</legend>
+                <table>
+                    <tr>
+                        <td><label for="pass type">Payment Mode:</label></td>
+                        <td><select name="pass type" id="pass type" required>
+                            <option value="select payment mode">Select Payment Mode</option>
+                            <option value="select payment mode">Payment At Counter</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="delivary mode">Pass Delivery Mode:</label></td>
+                        <td><select name="delivary mode" id="delivary mode" required>
+                            <option value="select pass delivary mode">Select Pass Delivary Mode</option>
+                            <option value="select pass delivary mode">At Counter</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="collect pass">Center To Collect Pass:</label></td>
+                        <td>
+                            <select name="collect pass" id="collect pass" required>
+                            <option value="">--Select--</option>
+                            <option value="">RTC KURNOOL</option>
+                            <option value="">RTC DHONE</option>
+                            <option value="">RTC ANANTAPUR</option>
+                            <option value="">RTC KADAPA</option>
+                        </select></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table>
+            <tr><td><img src="./images/botdetect3-captcha-meltingheat.jpg" width="100"></td></tr>
+                <tr>
+                <td><label for="captcha">Enter Captcha:</label></td>
+                <td><input type="text" id="captcha" name="captcha" placeholder="ENTER CAPTCHA"></td></tr>
+                
+            </table>
+            <br>
+            <input type="submit" value="submit" >
+        </form>
+    </center>
+</body>
+</html>
